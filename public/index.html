@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Welcome To VRAER</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.html">Visual Recognition Automated Emergency Response</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">notifications</i>
+                            <span class="label-count">7</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="icon-circle bg-orange">
+                                                <i class="material-icons">warning</i>
+                                            </div>
+                                            <div class="menu-info">
+                                                <h4>Potential Incident at PIE </h4>
+                                                <p>
+                                                    <i class="material-icons">access_time</i> 2 mins ago
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <!-- Tasks -->
+
+                    <!-- #END# Tasks -->
+                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">camera_alt</i>
+                            <span>All Cameras</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">view_list</i>
+                            <span>Detection Log</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">All Cases</a>
+                            </li>
+                            <li>
+                                <a href="">Successful Detection Cases</a>
+                            </li>
+                            <li>
+                                <a href="">Failed Cases</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">map</i>
+                            <span>Maps</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">Google Map</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href=""">
+                            <i class="material-icons">update</i>
+                            <span>Changelogs</span>
+                        </a>
+                    </li>
+                    <li class="header">LABELS</li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-red">donut_large</i>
+                            <span>Important</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-amber">donut_large</i>
+                            <span>Warning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="material-icons col-light-blue">donut_large</i>
+                            <span>Information</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2020 <a href="javascript:void(0);">Thomas - VRAER </a>.
+                </div>
+                <div class="version">
+                    <b>Version: </b> 0.0.1 ALPHA
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
+                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
+                    <ul class="demo-choose-skin">
+                        <li data-theme="red" class="active">
+                            <div class="red"></div>
+                            <span>Red</span>
+                        </li>
+                        <li data-theme="pink">
+                            <div class="pink"></div>
+                            <span>Pink</span>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                            <span>Purple</span>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                            <span>Deep Purple</span>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                            <span>Indigo</span>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                            <span>Blue</span>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                            <span>Light Blue</span>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                            <span>Cyan</span>
+                        </li>
+                        <li data-theme="teal">
+                            <div class="teal"></div>
+                            <span>Teal</span>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                            <span>Green</span>
+                        </li>
+                        <li data-theme="light-green">
+                            <div class="light-green"></div>
+                            <span>Light Green</span>
+                        </li>
+                        <li data-theme="lime">
+                            <div class="lime"></div>
+                            <span>Lime</span>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                            <span>Yellow</span>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                            <span>Amber</span>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                            <span>Orange</span>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                            <span>Deep Orange</span>
+                        </li>
+                        <li data-theme="brown">
+                            <div class="brown"></div>
+                            <span>Brown</span>
+                        </li>
+                        <li data-theme="grey">
+                            <div class="grey"></div>
+                            <span>Grey</span>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                            <span>Blue Grey</span>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                            <span>Black</span>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>DASHBOARD</h2>
+            </div>
+            <div class="row clearfix">
+                <!-- Task Info -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Welcome !</h2>
+
+                        </div>
+                        <div class="body">
+                            Welcome to the VRAER V 0.0.1 Prototype, Our team seeks to utilize IBM cloud's visual recognition, incorporating it with the readily available feed from security cameras, traffic cameras or even thermal cameras all around Singapore to recognize incidents such as, traffic accidents, a fire, flooding, or other incidents.  as it happens in real time.
+                            <br><br>
+                            In our initial phase, we will make use of LTA’s open DataMall APIs to retrieve real-time Traffic Images as well as data of reported Traffic accidents for use in detection. Upon detection of an incident,  SCDF’s Ops Center would be alerted with the location and visuals of the incident site from the camera, and respond accordingly, with little waste of resources.
+                            <br><br>
+                            With object detection and visual data, we hope to optimise SCDF response to RTAs which can vary from minor ones to major ones to large scale to ones that require specialised response from SCDF’s Specialised Units such as DART or SRU.
+
+                            <br><br>
+                            As this is a prototype, some known issues include, the alignment of the detection boxes with the video feed, and not all incidents being detected due to lack of model training.
+                            The warning alert has not been fully developed as well, so only detects but no alerts as of yet.
+                            Other side menu links are also for proof-of-concept
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CPU Usage -->
+
+            </div>
+
+            <!-- Widgets -->
+<!--            <div class="row clearfix">-->
+<!--                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <div class="info-box bg-pink hover-expand-effect">-->
+<!--                        <div class="icon">-->
+<!--                            <i class="material-icons">playlist_add_check</i>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <div class="text">NEW TASKS</div>-->
+<!--                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <div class="info-box bg-cyan hover-expand-effect">-->
+<!--                        <div class="icon">-->
+<!--                            <i class="material-icons">help</i>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <div class="text">NEW TICKETS</div>-->
+<!--                            <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <div class="info-box bg-light-green hover-expand-effect">-->
+<!--                        <div class="icon">-->
+<!--                            <i class="material-icons">forum</i>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <div class="text">NEW COMMENTS</div>-->
+<!--                            <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <div class="info-box bg-orange hover-expand-effect">-->
+<!--                        <div class="icon">-->
+<!--                            <i class="material-icons">person_add</i>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <div class="text">NEW VISITORS</div>-->
+<!--                            <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- #END# Widgets -->
+            <div class="row clearfix">
+                <!-- Task Info -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Test Accident Footage</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <script src="https://cdn.jsdelivr.net/npm/@cloud-annotations/models@0.1.1"></script>
+                            <script src="hls.js"></script>
+                            <div style="position: relative; height: 330px;">
+                            <video
+                                    id="video"
+                                    width="600"
+                                    height="330"
+                                    style="position: absolute;"
+                                    src="TEST2.mp4"
+                                    muted
+                                    controls
+                                    autoplay
+                            ></video>
+                            <canvas
+                                    id="canvas"
+                                    width="600"
+                                    height="330"
+                                    style="position: absolute;"
+                            ></canvas>
+                            <script>
+                                // Test stream from: https://bitmovin.com/mpeg-dash-hls-examples-sample-streams/
+                                // const LIVE_STREAM_URL =
+                                //   "https://5723acd20ffa9.streamlock.net:1935/lexington-live/lex-cam-071.stream/playlist.m3u8";
+
+                                const video = document.getElementById("video");
+                                const canvas = document.getElementById("canvas");
+
+                                video.addEventListener("loadeddata", function () {
+                                    // Model from: https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd
+                                    models.load("/model_web").then((model) => detectFrame(model));
+                                });
+
+                                const detectFrame = async (model) => {
+                                    const predictions = await model.detect(video);
+                                    renderPredictions(predictions);
+                                    requestAnimationFrame(() => {
+                                        detectFrame(model);
+                                    });
+                                };
+
+                                const renderPredictions = (predictions) => {
+                                    const ctx = canvas.getContext("2d");
+                                    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                                    // Font options.
+                                    const font = "16px sans-serif";
+                                    ctx.font = font;
+                                    ctx.textBaseline = "top";
+                                    predictions.forEach((prediction) => {
+                                        const x = prediction.bbox[0];
+                                        const y = prediction.bbox[1];
+                                        const width = prediction.bbox[2];
+                                        const height = prediction.bbox[3];
+                                        const label = `${prediction.class}: ${prediction.score.toFixed(2)}`;
+                                        // Draw the bounding box.
+                                        ctx.strokeStyle = "#FFFF3F";
+                                        ctx.lineWidth = 5;
+                                        ctx.strokeRect(x, y, width, height);
+                                        // Draw the label background.
+                                        ctx.fillStyle = "#FFFF3F";
+                                        const textWidth = ctx.measureText(label).width;
+                                        const textHeight = parseInt(font, 10); // base 10
+                                        ctx.fillRect(x, y, textWidth + 4, textHeight + 4);
+                                    });
+
+                                    predictions.forEach((prediction) => {
+                                        const x = prediction.bbox[0];
+                                        const y = prediction.bbox[1];
+                                        const label = `${prediction.class}: ${prediction.score.toFixed(2)}`;
+                                        // Draw the text last to ensure it's on top.
+                                        ctx.fillStyle = "#000000";
+                                        ctx.fillText(label, x, y);
+                                    });
+                                };
+
+                                if (Hls.isSupported()) {
+                                    const config = { liveDurationInfinity: true };
+                                    const hls = new Hls(config);
+                                    hls.loadSource(LIVE_STREAM_URL);
+                                    hls.attachMedia(video);
+                                    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                                        video.play();
+                                    });
+                                }
+
+                                    // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+                                    // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+                                    // This is using the built-in support of the plain video element, without using hls.js.
+                                    // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
+                                // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
+                                else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                                    video.src = LIVE_STREAM_URL;
+                                    video.addEventListener("loadedmetadata", function () {
+                                        video.play();
+                                    });
+                                }
+                            </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- CPU Usage -->
+
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="plugins/flot-charts/jquery.flot.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
