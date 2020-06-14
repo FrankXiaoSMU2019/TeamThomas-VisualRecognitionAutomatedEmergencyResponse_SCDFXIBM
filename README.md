@@ -49,7 +49,7 @@ Security cameras, NEA thermal cameras, traffic camera and other cameras in the s
 
 ## Live Demo
 
-A live demo of the VRAER can be found [here](https://adeelkasban.com/object-detection-live-stream-master/public/index1.html).
+A live demo of the VRAER can be found [here](https://adeelkasban.com/object-detection-live-stream-master/public/index.html).
 
 ## Getting started
 
