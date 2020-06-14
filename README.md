@@ -75,7 +75,7 @@ cd object-detection-live-stream
 npm install
 npm start
 ```
-4. Enter https://localhost:3000/ to see the live demo.
+4. Enter http://localhost:3000/ to see the live demo.
 
 
 ## Built with
